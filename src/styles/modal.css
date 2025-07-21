@@ -1,0 +1,184 @@
+/* modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    pointer-events: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .modal-overlay.show {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  
+  .modal-overlay .modal-content {
+    background-color: var(--white);
+    border-radius: 1rem;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Entrada: desde arriba hacia el centro */
+
+  .modal-content {
+    display: flex;
+    padding: 0;
+    width: 95%;
+    max-width: 1000px;
+    height: 550px; /* Altura reducida */
+    max-height: 600px; /* Misma altura máxima */
+    overflow: hidden;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-content .image-container {
+    flex: 1;
+    min-width: 50%;
+    overflow: hidden;
+  }
+
+  .modal-content .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .modal-content .content-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto; /* Añadir scroll vertical si el contenido es muy largo */
+    max-height: 100%; /* Asegurar que no desborde el contenedor padre */
+  }
+
+  .modal-content .content-container h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+
+  .modal-content .content-container p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+  }
+
+  .modal-content .content-container a {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--pink-dark);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  .modal-content .content-container a:hover {
+    background-color: var(--pink-light);
+    color: var(--pink-dark);
+    transform: scale(1.05);
+    border: 1px solid var(--pink-dark);
+  }
+
+  /* Estilos específicos para pantallas pequeñas (móviles) */
+  @media (max-width: 767px) {
+    .modal-overlay {
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    
+    .modal-content {
+      flex-direction: column;
+      width: 100%;
+      max-height: 90vh;
+      height: auto;
+    }
+    
+    .modal-content .image-container {
+      width: 100%;
+      height: 200px;
+      min-height: 200px;
+    }
+    
+    .modal-content .content-container {
+      padding: 1.5rem;
+      max-height: none;
+    }
+    
+    .modal-close {
+      background: rgba(0, 0, 0, 0.7);
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .modal-overlay.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.1s; /* Pequeño retraso para asegurar que la animación se vea */
+  }
+
+  .content-container-description{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .content-container-description h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  .content-container-description p{
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  /* Salida: hacia abajo y desvanecido */
+  .modal-overlay.hide .modal-content {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .modal-close:hover {
+    color: rgb(240, 56, 56);
+    transform: scale(1.1);
+  }

@@ -1,0 +1,11 @@
+@import url("variables.css");
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--pink-light);
+}
+footer p{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}

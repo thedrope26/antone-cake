@@ -1,0 +1,137 @@
+@import url("../styles/variables.css");
+
+.cakes-sizes-container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--white);
+
+}
+
+.cakes-sizes-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cakes-sizes-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+}
+
+.cakes-sizes-img{
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.cakes-sizes-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.95);
+}
+
+.cakes-sizes-img img.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.cakes-sizes-buttons-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.cakes-sizes-buttons-title h2{
+    margin-bottom: 20px;
+    text-align:center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.cakes-sizes-buttons-title p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 500px;
+    padding: 0 20px;
+}
+.cakes-sizes-buttons-title h3{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.cakes-sizes-buttons-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cakes-sizes-buttons button{
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: var(--pink-dark);
+    color: var(--white);
+    border: 1px solid transparent;
+}
+
+.cakes-sizes-buttons button.active {
+    background-color: var(--pink-light);
+    color: var(--pink-dark);
+    border: 1px solid var(--pink-dark);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cakes-sizes-buttons button:hover{
+    background-color: var(--pink-light);
+    color: var(--pink-dark);
+    cursor: pointer;
+    border: 1px solid var(--pink-dark);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    
+    .cakes-sizes-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cakes-sizes-buttons button{
+        width: 100%;
+    }
+
+    .cakes-sizes-buttons{
+        width: 100%;
+        max-width: 400px;
+        
+    }
+    .cakes-sizes-img{
+        margin-top: 40px;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+    }
+}

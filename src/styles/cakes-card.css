@@ -1,0 +1,62 @@
+@import url('../styles/variables.css');
+
+.estilo_cake-card {
+    border: 1px solid var(--pink-dark);
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.estilo_cake-card:hover {
+    transform: scale(1.05);
+}
+
+.estilo_cake-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.estilo_cake-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.estilo_cake-info {
+    padding: 15px;
+}
+
+.estilo_cake-title {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.estilo_cake-price {
+    font-size: 1rem;
+    color: var(--pink-dark);
+    margin-bottom: 15px;
+}
+
+.estilo_cake-button {
+    background-color: var(--pink-dark);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.estilo_cake-button:hover {
+    background-color: var(--pink-light);
+    color: var(--pink-dark);
+    cursor: pointer;
+    border: 1px solid var(--pink-dark);
+}

@@ -1,0 +1,125 @@
+.delivery-section{
+    background-color: var(--beige);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.delivery-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.delivery-title h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.delivery-content-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.delivery-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.delivery-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 15px;
+    background-color: var(--pink-light);
+    border-radius: 10px;
+    border: 2px solid var(--pink-dark);
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.delivery-content-item:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--pink-dark);
+    background-color: var(--white); 
+}
+
+.delivery-content-item i{
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.delivery-content-item h3{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.delivery-content-item p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .delivery-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .delivery-img{
+        display: none;
+    }
+    .delivery-content-text{
+        width: 100%;
+    }
+    .delivery-title h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .delivery-content-item{
+        width: 100%;   
+    }
+    .delivery-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .delivery-content-item{
+        width: 100%;
+    }
+}
+

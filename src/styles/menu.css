@@ -1,0 +1,25 @@
+@import url('../styles/variables.css');
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+.menu-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-title{
+    margin-bottom: 20px;
+    text-align:center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 20px;
+}
