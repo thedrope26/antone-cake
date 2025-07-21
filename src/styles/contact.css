@@ -67,9 +67,9 @@
 
 .contact-text p {
     font-size: 1.4rem;
-    text-align: justify;
+    text-align: center;
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 .contact-text a {
