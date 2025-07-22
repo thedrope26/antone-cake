@@ -188,6 +188,7 @@
     .contact-form{
         width: 100%;
         max-width: 300px;
+        display:flex;
     }
     .contact-form  form{
         width: 100%;

@@ -1,10 +1,8 @@
 import { useState } from "react";
-import "../styles/Navbar.css"; // Asegúrate de tener tus estilos separados
+import "../styles/Navbar.css"; 
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Función para cambiar el estado del menú (abrir/cerrar)
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
@@ -17,25 +15,25 @@ export default function Navbar() {
           <li>
             <div className="nav-item">
               <i className="fa-solid fa-house"></i>
-              <a href="/">Inicio</a>
+              <a href="#home">Inicio</a>
             </div>
           </li>
           <li>
             <div className="nav-item">
               <i className="fa-solid fa-store"></i>
-              <a href="/productos">Productos</a>
+              <a href="#productos">Productos</a>
             </div>
           </li>
           <li>
             <div className="nav-item">
               <i className="fa-solid fa-paint-roller"></i>
-              <a href="/disenos">Diseños</a>
+              <a href="#disenos">Diseños</a>
             </div>
           </li>
           <li>
             <div className="nav-item">
               <i className="fa-solid fa-envelope-open-text"></i>
-              <a href="/contacto">Contacto</a>
+              <a href="#contacto">Contacto</a>
             </div>
           </li>
         </ul>
@@ -47,9 +45,9 @@ export default function Navbar() {
         aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
       >
         {isMenuOpen ? (
-          <i className="fa-solid fa-xmark"></i> // Icono de "X" cuando el menú está abierto
+          <i className="fa-solid fa-xmark"></i>
         ) : (
-          <i className="fa-solid fa-bars"></i> // Icono de hamburguesa cuando el menú está cerrado
+          <i className="fa-solid fa-bars"></i>
         )}
       </button>
     </header>

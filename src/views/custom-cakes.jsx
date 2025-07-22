@@ -25,7 +25,7 @@ export default function CustomCakes() {
     };
 
     return (
-        <section className="custom-cakes-section">
+        <section id="disenos" className="custom-cakes-section">
 
             <div className='custom-cakes-container'>
                 <div className="custom-cakes-content">

@@ -48,7 +48,7 @@ export default function Menu() {
   };
 
   return (
-    <section className="menu">
+    <section id="productos" className="menu">
       <div className="menu-title">
         <h2>Te ofrecemos los siguientes productos</h2>
       </div>
@@ -82,15 +82,11 @@ export default function Menu() {
           </div>
           <a 
           className="order-button"
-            href={`https://wa.me/584247342619?text=${encodeURIComponent(
+            href={`https://wa.me/584125501517?text=${encodeURIComponent(
               `¡Hola! Estoy interesado en el siguiente producto:
-              *Producto:* ${selectedCake?.CakeName}
-              *Precio:* ${selectedCake?.CakePrice}$
-              *Descripción:* ${selectedCake?.CakeDescription}
-              *Ingredientes:* ${selectedCake?.CakeIngredients}
-              *Sabores disponibles:* ${selectedCake?.CakeFlavors || 'No especificado'}
-
-              Me gustaría hacer un pedido de este producto.`
+              ${selectedCake?.CakeName},  
+              el cual tiene un precio de referencia de ${selectedCake?.CakePrice}$
+              en su pagina web. Me gustaría hacer un pedido de este producto.`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"

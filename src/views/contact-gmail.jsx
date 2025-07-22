@@ -19,7 +19,7 @@ export default function ContactGmail() {
         const body = encodeURIComponent(
             `Nombre: ${formData.name}\nCorreo: ${formData.gmail}\n\nMensaje:\n${formData.message}`
         );
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=valladarespedro2016@gmail.com&su=${subject}&body=${body}`;
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=yohanavalladares08@gmail.com&su=${subject}&body=${body}`;
         window.open(gmailUrl, '_blank');
     }
     return (

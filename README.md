@@ -1,12 +1,20 @@
-# React + Vite
+# AntoneCake
+![Logo AntoneCake](public/img/logo.png)  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inspirado en los momentos dulces que hacen la vida especial, AntoneCake es un rincón donde la pasión por la repostería cobra vida. Cada pastel es elaborado con dedicación, pensado para celebrar momentos especiales y alegrar corazones con sabores auténticos y memorables.
 
-Currently, two official plugins are available:
+## Descripción
+AntoneCake es una tienda digital de repostería enfocada en la creación de pasteles personalizados, hechos con ingredientes frescos y amor por el arte culinario. Nuestra misión es ofrecer productos de calidad con una presentación impecable y un servicio de entrega confiable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
+* **Productos artesanales:** Cada pastel es hecho a mano con recetas originales.
+* **Personalización:** Puedes elegir el tamaño, sabor y diseño de tu pastel.
+* **Diseño limpio:** Interfaz amigable y visualmente atractiva.
+* **Delivery fijo:** Entregas confiables en una zona determinada.
 
-## Expanding the ESLint configuration
+## Alcance de entrega
+Actualmente, AntoneCake realiza entregas exclusivamente dentro de una zona establecida. Al momento de realizar tu pedido, podrás verificar si tu dirección está dentro del radio de entrega disponible. Nos aseguramos de que cada pastel llegue en perfectas condiciones hasta tu puerta.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contacto
+* **Correo electrónico:** [yohanavalladares08@gmail.com](mailto:yohanavalladares08@gmail.com)
+* **Teléfono:** [+58 412 5501517]

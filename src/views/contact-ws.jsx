@@ -1,7 +1,7 @@
 import "../styles/contact.css"
 export default function ContactWs() {
     const massage = encodeURIComponent("Hola, vi sus productos y me gustaría hacer un pedido, me gustaría saber más sobre el precio y el envio.");
-    const number = "584247342619";
+    const number = "584125501517";
     return (
         <section className="contact-section">
             <div className="contact-content">

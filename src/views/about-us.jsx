@@ -1,7 +1,7 @@
 import "../styles/contact.css"
 export default function AboutUs() {
     return (
-        <section className="contact-section">
+        <section id="contacto" className="contact-section">
             <div className="contact-content">
                 <div className="contact-img">
                     <img src="../img/chatting-42.svg" alt="" />

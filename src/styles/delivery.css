@@ -101,7 +101,9 @@
         flex-direction: column;
         padding: 10px;
     }
-    
+    .delivery-section{
+        padding: 40px;
+    }
     .delivery-img{
         display: none;
     }

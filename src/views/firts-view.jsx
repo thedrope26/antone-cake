@@ -2,10 +2,10 @@ import "../styles/style-menu.css"
 
 export default function FirtsView(){
     const message = encodeURIComponent("Hola, vi sus productos y me gustaría hacer un pedido, me gustaría saber más sobre el precio y el envio.");
-    const number = "584247342619";
+    const number = "584125501517";
     
     return (
-        <section className="style-menu-container">
+        <section id="home" className="style-menu-container">
             <div className="style-menu-img">
                 <img src="../img/logo.png" alt="Logo de AntoneCake" />
             </div>
