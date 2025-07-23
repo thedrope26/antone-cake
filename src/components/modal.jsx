@@ -8,21 +8,15 @@ export default function Modal({ show, onClose, children }) {
 
   useEffect(() => {
     if (show) {
-      // Limpiar cualquier temporizador pendiente
       if (animationRef.current) {
         clearTimeout(animationRef.current);
       }
-      
-      // Montar el componente primero
       setIsMounted(true);
-      
-      // Forzar un reflow para asegurar que la transición se ejecute
       animationRef.current = setTimeout(() => {
-        // Usar requestAnimationFrame para asegurar que el navegador esté listo
         requestAnimationFrame(() => {
           setIsVisible(true);
         });
-      }, 50); // Aumentamos ligeramente el tiempo para asegurar el montaje
+      }, 50); 
       
       return () => {
         if (animationRef.current) {
@@ -30,13 +24,12 @@ export default function Modal({ show, onClose, children }) {
         }
       };
     } else {
-      // Iniciar animación de salida
+    
       setIsVisible(false);
       
-      // Esperar a que termine la animación antes de desmontar
       animationRef.current = setTimeout(() => {
         setIsMounted(false);
-      }, 350); // Ajustamos para que coincida con la duración de la animación
+      }, 350); 
       
       return () => {
         if (animationRef.current) {
@@ -46,7 +39,7 @@ export default function Modal({ show, onClose, children }) {
     }
   }, [show]);
 
-  // Si no está montado, no renderizar nada
+ 
   if (!isMounted) return null;
 
   return (

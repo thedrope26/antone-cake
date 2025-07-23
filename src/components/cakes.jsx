@@ -1,5 +1,5 @@
 import "../styles/cakes-card.css"
-export default function Cake({ CakeName, CakePrice, CakeImg, onClick }) {
+export default function Cake({ CakeName, CakeImg, onClick }) {
   return (
     <article className="estilo_cake-card">
       <div className="estilo_cake-img-container">
@@ -7,7 +7,6 @@ export default function Cake({ CakeName, CakePrice, CakeImg, onClick }) {
       </div>
       <div className="estilo_cake-info">
         <h3 className="estilo_cake-title">{CakeName}</h3>
-        <h4 className="estilo_cake-price">Precio: {CakePrice}$</h4>
         <button className="estilo_cake-button" onClick={onClick}>
           Ver Detalles
         </button>

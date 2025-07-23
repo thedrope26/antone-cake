@@ -6,9 +6,8 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 250px;
+    width: 280px;
     text-align: center;
-    margin: 15px;
     transition: transform 0.3s;
 }
 
@@ -18,7 +17,7 @@
 
 .estilo_cake-img-container {
     width: 100%;
-    height: 200px;
+    height: 220px;
     overflow: hidden;
 }
 
@@ -45,6 +44,7 @@
 }
 
 .estilo_cake-button {
+    width: 100%;
     background-color: var(--pink-dark);
     color: var(--white);
     border: none;
@@ -59,4 +59,5 @@
     color: var(--pink-dark);
     cursor: pointer;
     border: 1px solid var(--pink-dark);
+    transform: scale(1.05);
 }

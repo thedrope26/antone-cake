@@ -1,5 +1,4 @@
 :root {
-  /* Pastel Color Palette */
   --pink-light: #f8d7da;
   --beige: #f5f5dc;
   --mint: #d0f0e0;
@@ -7,8 +6,6 @@
   --pink-dark: #e75480;
   --text-color: #333333;
   --whatsapp-green: #25d366;
-  
-  /* Typography */
   --main-font: 'Arial', sans-serif;
 }
 

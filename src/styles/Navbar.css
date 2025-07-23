@@ -44,39 +44,33 @@
   gap: 10px;
 }
 
-/* Contenedor nav-item que agrupa íconos y texto */
 .nav-item {
   display: flex;
   align-items: center;
   gap: 10px;
   transition: color 0.3s, transform 0.3s;
-  /* Se asegura de que ambos (ícono y texto) tengan transición de color */
 }
 
-/* Hover sobre el contenedor nav-item */
 .nav-item:hover i, .nav-item:hover a {
   cursor: pointer;
-  color: var(--pink-dark); /* Cambiar color de texto e icono al hacer hover */
-  transform: scale(1.1); /* Le damos un pequeño zoom al pasar el cursor */
+  color: var(--pink-dark); 
+  transform: scale(1.1); 
 }
 
-/* Estilos para los íconos */
 .nav-item i {
   color: var(--text-color);
   font-size: 20px;
-  transition: transform 0.3s ease, color 0.3s ease; /* Transición para color y tamaño */
+  transition: transform 0.3s ease, color 0.3s ease; 
 }
 
-/* Estilos para los enlaces */
 .nav-item a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: bold;
   font-size: 1.2rem;
-  transition: color 0.3s ease; /* Transición suave de color del texto */
+  transition: color 0.3s ease; 
 }
 
-/* Estilos para el botón hamburguesa */
 .hamburger {
   display: none;
   background: none;
@@ -91,7 +85,7 @@
   color: var(--pink-dark);
 }
 
-/* Media query para dispositivos móviles */
+
 @media (max-width: 768px) {
   .nav-container {
     position: absolute;
@@ -103,11 +97,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    transform: translateX(100%); /* Inicialmente oculto */
+    transform: translateX(100%); 
   }
 
   .nav-container.open {
-    transform: translateX(0); /* Muestra el menú cuando se abre */
+    transform: translateX(0); 
   }
 
   .nav-container ul {
@@ -138,9 +132,9 @@
   }
   .nav-item:hover {
     background-color: var(--pink-dark);
-    transform: scale(1.01); /* Le damos un pequeño zoom al pasar el cursor */
+    transform: scale(1.01); 
   }
   .nav-item:hover i, .nav-item:hover a {
-    color: var(--white); /* Cambiar color de texto e icono al hacer hover */
+    color: var(--white); 
   }
 }

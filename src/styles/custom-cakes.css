@@ -118,7 +118,6 @@
 }
 
 
-/* Responsive design */
 @media (max-width: 768px) {
     .custom-cakes-container {
         flex-direction: column;
