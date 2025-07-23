@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Cake from '../components/cakes'; // Importa correctamente tu componente
-import Modal from './Modal';
+import Cake from '../components/cakes'; 
+import Modal from './modal';
 import '../styles/menu.css';
 
 const Cakedatas = [
