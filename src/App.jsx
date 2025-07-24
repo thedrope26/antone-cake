@@ -1,4 +1,4 @@
-import Navbar from "./components/nav_bar";
+import Navbar from "./components/navbar";
 import Menu from "./components/cakes-card";
 import CakeSizes from "./views/cake-sizes";
 import CustomCakes from "./views/custom-cakes";
