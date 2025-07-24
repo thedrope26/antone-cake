@@ -27,7 +27,7 @@ export default function ContactGmail() {
             <h3>Envíanos un correo electrónico para hacer tu pedido a tu gusto</h3>
             <div className="contact-content">
                 <div className="contact-img">
-                    <img src="../img/Sending_Emails.svg" alt="Formulario de contacto" />
+                    <img src="../img/Sending_Emails.svg" alt="Formulario de contacto" loading="lazy"/>
                 </div>
                 <div className="contact-form">
                     <form onSubmit={handleSubmit} className="contact-form">

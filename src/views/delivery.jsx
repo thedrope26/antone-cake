@@ -4,7 +4,7 @@ export default function Delivery() {
         <section className="delivery-section">
             <div className="delivery-container">
                 <div className="delivery-img">
-                    <img src="../img/atention.png" alt="" />
+                    <img src="../img/atention.png" alt="atencion" loading="lazy" />
                 </div>
                 <div className="delivery-text delivery-content-text">
                 <div className="delivery-title">

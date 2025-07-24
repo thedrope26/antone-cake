@@ -14,3 +14,7 @@
   margin: 0;
   font-family: var(--main-font);
 }
+
+html, body {
+  overflow-x: hidden;
+}

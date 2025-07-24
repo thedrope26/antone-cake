@@ -36,6 +36,7 @@ export default function CustomCakes() {
                                 src={`/img/custom/${image}`} 
                                 alt={`Diseño personalizado ${index + 1}`}
                                 className={`custom-cakes-img-item ${index === activeImage ? 'active' : ''}`}
+                                loading="lazy"
                             />
                         ))}
                     </div>

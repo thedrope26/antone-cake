@@ -7,7 +7,7 @@ export default function FirtsView(){
     return (
         <section id="home" className="style-menu-container">
             <div className="style-menu-img">
-                <img src="../img/logo.png" alt="Logo de AntoneCake" />
+                <img src="../img/logo.png" alt="Logo de AntoneCake" loading="lazy"/>
             </div>
             <div className="style-menu-text">
                 <h1>AntoneCake</h1>

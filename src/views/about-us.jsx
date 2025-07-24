@@ -4,7 +4,7 @@ export default function AboutUs() {
         <section id="contacto" className="contact-section">
             <div className="contact-content">
                 <div className="contact-img">
-                    <img src="../img/chatting-42.svg" alt="" />
+                    <img src="../img/chatting-42.svg" alt="sobre nosotros" loading="lazy"/>
                 </div>
                 <div className="contact-text">
                     <h3>Visita nuestro perfil en Instagram</h3>

@@ -54,9 +54,9 @@ export default function CakeSizes(){
                     </div>
                 </div>
                 <div className="cakes-sizes-img">
-                    <img src={getImageUrl(1)} alt="Torta de 1 piso" className={selectedFloor === 1 ? 'active' : ''} />
-                    <img src={getImageUrl(2)} alt="Torta de 2 pisos" className={selectedFloor === 2 ? 'active' : ''} />
-                    <img src={getImageUrl(3)} alt="Torta de 3 pisos" className={selectedFloor === 3 ? 'active' : ''} />
+                    <img src={getImageUrl(1)} alt="Torta de 1 piso" className={selectedFloor === 1 ? 'active' : ''} loading="lazy"/>
+                    <img src={getImageUrl(2)} alt="Torta de 2 pisos" className={selectedFloor === 2 ? 'active' : ''} loading="lazy"/>
+                    <img src={getImageUrl(3)} alt="Torta de 3 pisos" className={selectedFloor === 3 ? 'active' : ''} loading="lazy"/>
                 </div>
             </div>
         </section>

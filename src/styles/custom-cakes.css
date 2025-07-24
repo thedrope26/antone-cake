@@ -1,5 +1,4 @@
 .custom-cakes-section {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -119,6 +118,9 @@
 
 
 @media (max-width: 768px) {
+    .custom-cakes-section{
+        padding: 20px;
+    }
     .custom-cakes-container {
         flex-direction: column;
         align-items: center;

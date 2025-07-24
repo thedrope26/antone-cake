@@ -1,6 +1,7 @@
 @import url("variables.css");
 
 .style-menu-container {
+    margin-top: 40px;
     position: relative;
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/wallpaper.png');
@@ -14,8 +15,10 @@
 }
 
 .style-menu-img {
-    width: 600px;
-    height: 500px;
+    flex: 1 1 400px;
+    max-width: 600px;
+    min-width: 280px;
+    height: auto; 
     border-radius: 8px;
     overflow: hidden;
     margin-right: 40px;
@@ -30,6 +33,7 @@
 }
 
 .style-menu-text {
+    flex: 1 1 400px; 
     width: 700px;
     display: flex;
     flex-direction: column;

@@ -19,7 +19,7 @@ export default function ContactWs() {
                     </a>
                 </div>
                 <div className="contact-img">
-                    <img src="../img/Message_Sent.svg" alt="" />
+                    <img src="../img/Message_Sent.svg" alt="mensaje-whatsapp" loading="lazy" />
                 </div>
             </div>
         </section>
