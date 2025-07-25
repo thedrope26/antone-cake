@@ -32,8 +32,8 @@
     padding: 0;
     width: 95%;
     max-width: 1000px;
-    height: 500px; 
-    max-height: 600px; 
+    height: 480px; 
+    max-height: 450px; 
     overflow: hidden;
     position: relative;
     background-color: var(--white);
@@ -111,6 +111,7 @@
       max-height: 90vh;
       height: auto;
     }
+
     
     .modal-content .image-container {
       width: 100%;
@@ -157,7 +158,6 @@
     color: var(--text-color);
   }
   
-  /* Salida: hacia abajo y desvanecido */
   .modal-overlay.hide .modal-content {
     transform: translateY(50px);
     opacity: 0;

@@ -49,6 +49,7 @@
     gap: 20px;
     width: 100%;
     margin-top: 30px;
+    grid-template-rows: 220px;
 }
 
 .delivery-content-item {
@@ -67,6 +68,7 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     height: 100%;
+    min-height: 220px;
 }
 
 .delivery-content-item:hover{
@@ -98,9 +100,10 @@
     .delivery-container {
         flex-direction: column;
         padding: 10px;
+        box-sizing: border-box;
     }
     .delivery-section{
-        padding: 40px;
+        padding: 20px;
     }
     .delivery-img{
         display: none;
@@ -114,12 +117,16 @@
     }
     .delivery-content-item{
         width: 100%;   
+        max-width: 350px;
+        box-sizing: border-box;
     }
     .delivery-content{
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
     .delivery-content-item{
         width: 100%;
+        max-width: 400px;
     }
 }
 

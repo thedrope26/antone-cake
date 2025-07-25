@@ -8,28 +8,23 @@ const Cakedatas = [
     CakeName: "Torta",
     CakeImg: "../img/menu-card/cake.jpg",
     CakeDescription: "Un pastel exquisito con capas tiernas y aromáticas, y un relleno aterciopelado que deleita el paladar. Es el toque dulce ideal para convertir cualquier momento en una ocasión especial.",
-    CakeIngredients:"Harina, Mantequilla, Azúcar, Huevos, Leche, Vainilla, Sal",
     CakeFlavors:"Chocolate, Vainilla, Fresa, Frutos Rojos, Limón"
   },
   {
     CakeName: "3 leches",
     CakeImg: "../img/menu-card/3leche.jpg",
     CakeDescription:"Un esponjoso bizcocho bañado en una dulce mezcla de tres leches, culminado con suave merengue o crema batida.",
-    CakeIngredients:"Bizcocho, Leche Condensada, Leche Evaporada, Crema de Leche, Merengue",
-
   },
   {
     CakeName: "Pies",
     CakeImg: "../img/menu-card/pie.jpg",
     CakeDescription:"Un pie horneado a la perfección con una corteza dorada y crujiente, y un relleno generoso y aromático. Es el postre ideal para compartir o disfrutar en cualquier momento.",
-    CakeIngredients:"Harina , Mantequilla, Frutas, Azúcar, Especias Aromáticas",
     CakeFlavors:"Manzana, Limón, Mora, Fresa"
   },
   {
     CakeName: "Gelatinas",
     CakeImg: "../img/menu-card/gelatina.jpg",
     CakeDescription: "Una textura vibrante y ligera que se deshace suavemente en tu boca, llena de sabores frutales y un toque dulce. Nuestras gelatinas son el postre perfecto para refrescar y deleitar en cualquier momento.",
-    CakeIngredients:"Gelatina, Azúcar, Agua, Crema, Frutos Rojos, Vainilla",
     CakeFlavors:"Manzana, Limón, Mora, Fresa"
   },
 ];
@@ -69,7 +64,6 @@ export default function Menu() {
           <div className='content-container-description'>
             <h2>{selectedCake?.CakeName}</h2>
             <p><b>Detalles del producto:</b> {selectedCake?.CakeDescription}</p>
-            <p><b>Ingredientes:</b> {selectedCake?.CakeIngredients}</p>
             {selectedCake?.CakeFlavors && (
               <p><b>Sabores:</b> {selectedCake.CakeFlavors}</p>
             )}

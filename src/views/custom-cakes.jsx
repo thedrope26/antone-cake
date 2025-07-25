@@ -40,6 +40,12 @@ export default function CustomCakes() {
                             />
                         ))}
                     </div>
+                    <button 
+                            onClick={handleImageChange} 
+                            className="custom-cakes-button"
+                        >
+                            Ver otros diseños
+                        </button>
                 </div>
                 <div className="custom-cakes-text">
                     <h2>Contamos con diseños personalizados</h2>
@@ -47,12 +53,6 @@ export default function CustomCakes() {
                         Cada diseño es hecho con dedicación, pensado en tu estilo y ocasión. 
                         Tú eliges los sabores, colores y decoración, y nosotros lo hacemos 
                         realidad con amor y detalle</p>
-                    <button 
-                        onClick={handleImageChange} 
-                        className="custom-cakes-button"
-                    >
-                        Ver otros diseños
-                    </button>
                 </div>
             </div>
         </section>

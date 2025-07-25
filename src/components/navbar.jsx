@@ -15,28 +15,28 @@ export default function Navbar() {
       <nav className={`nav-container ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <div className="nav-item">
+            <a href="#home" className="nav-item" onClick={closeMenu}>
               <i className="fa-solid fa-house"></i>
-              <a href="#home" onClick={closeMenu}>Inicio</a>
-            </div>
+              <span>Inicio</span>
+            </a>
           </li>
           <li>
-            <div className="nav-item">
-              <i className="fa-solid fa-store"></i>
-              <a href="#productos" onClick={closeMenu}>Productos</a>
-            </div>
+            <a href="#productos" className="nav-item" onClick={closeMenu}>
+                <i className="fa-solid fa-store"></i>
+                <span>Productos</span>
+            </a>
           </li>
           <li>
-            <div className="nav-item">
+            <a href="#disenos" className="nav-item" onClick={closeMenu}>
               <i className="fa-solid fa-paint-roller"></i>
-              <a href="#disenos" onClick={closeMenu}>Diseños</a>
-            </div>
+              <span>Diseños</span>
+            </a>
           </li>
           <li>
-            <div className="nav-item">
+            <a href="#contacto" className="nav-item" onClick={closeMenu}>
               <i className="fa-solid fa-envelope-open-text"></i>
-              <a href="#contacto" onClick={closeMenu}>Contacto</a>
-            </div>
+              <span>Contacto</span>
+            </a>
           </li>
         </ul>
       </nav>

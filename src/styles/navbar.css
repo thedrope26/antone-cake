@@ -19,6 +19,7 @@
   object-fit: contain;
 }
 
+/* ===== MENÚ PRINCIPAL ===== */
 .nav-container {
   display: flex;
   justify-content: center;
@@ -37,48 +38,45 @@
 }
 
 .nav-container ul li {
-  display: flex;
-  gap: 5px;
   list-style: none;
 }
 
-.nav-container ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 500;
-  transition: color 0.3s;
-  gap: 10px;
-}
-
-.nav-item {
+/* ===== ENLACES ===== */
+.nav-container ul li a.nav-item {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  padding: 8px 12px; 
+  padding: 8px 12px;
   border-radius: 8px;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.nav-item:hover i, .nav-item:hover a {
-  cursor: pointer;
-  color: var(--pink-dark); 
-  transform: scale(1.1); 
-}
-
-.nav-item i {
-  color: var(--text-color);
-  font-size: 20px;
-  transition: transform 0.3s ease, color 0.3s ease; 
-}
-
-.nav-item a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: bold;
   font-size: 1.2rem;
-  transition: color 0.3s ease; 
+  transition: all 0.3s ease;
 }
+
+/* Íconos dentro del enlace */
+.nav-container ul li a.nav-item i {
+  font-size: 20px;
+  color: var(--text-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.nav-container ul li a.nav-item span {
+  display: inline-block;
+}
+
+
+.nav-container ul li a.nav-item:hover {
+  transform: scale(1.05);
+}
+
+.nav-container ul li a.nav-item:hover i,
+.nav-container ul li a.nav-item:hover span {
+  color: var(--pink-dark);
+}
+
 
 .hamburger {
   display: none;
@@ -94,15 +92,14 @@
   color: var(--pink-dark);
 }
 
-
 @media (max-width: 768px) {
   .nav-container {
     position: fixed;
-    top: 70px; 
+    top: 70px;
     right: 0;
     background-color: var(--pink-light);
     width: 100vw;
-    height: calc(100vh - 70px); 
+    height: calc(100vh - 70px);
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -110,8 +107,7 @@
     transition: transform 0.3s ease-in-out;
     z-index: 9999;
     overflow-y: auto;
-}
-
+  }
 
   .nav-container.open {
     transform: translateX(0);
@@ -122,53 +118,35 @@
     flex-direction: column;
     width: 100%;
     gap: 10px;
+    padding: 10px;
   }
 
   .nav-container ul li {
     width: 100%;
-    text-align: left;
+  }
+
+  .nav-container ul li a.nav-item {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 18px;
+    padding: 12px 15px;
+  }
+
+  .nav-container ul li a.nav-item:hover {
+    background-color: var(--pink-dark);
+    transform: scale(1.02);
+  }
+
+  .nav-container ul li a.nav-item:hover i,
+  .nav-container ul li a.nav-item:hover span {
+    color: var(--white);
   }
 
   .hamburger {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 11000; 
+    z-index: 11000;
     display: block;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-
-  .nav-container ul li a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    color: var(--text-color);
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-  }
-
-  .nav-item:hover {
-    background-color: var(--pink-dark);
-  }
-
-  .nav-item:hover a,
-  .nav-item:hover i {
-    color: var(--white);
-    cursor: pointer;
-    gap: 20px;
-    padding: 15px;
-    transform: scale(1.1); 
   }
 }
